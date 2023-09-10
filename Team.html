@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Team</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "myStyle.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <style>
+        .mainContent {
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-image: url(Images/backgroundImage.jpeg);
+        }
+
+        .member-list {
+            list-style: none;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            padding-inline-start: 0px;
+            height: 100%;
+        }
+
+        .member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 10px;
+            justify-content: space-around;
+        }
+
+        .member-info {
+                width: 75%;
+        }
+
+        .member-image {
+            width: 28%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .member-name {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .member-bio {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 1050px) {
+            .member-image {
+                width: 31%;
+            }
+        }
+        
+        @media screen and (max-width: 1000px) {
+            .member-image {
+                width: 34%;
+            }
+            .member-info {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 950px) {
+            .member-image {
+                width: 38%;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .member-image {
+                width: 42%;
+            }
+        }
+
+        @media screen and (max-width: 840px) {
+            .member-image {
+                width: 47%;
+            }
+        }
+
+        @media screen and (max-width: 790px) {
+            .member-image {
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 730px) {
+            .member-image {
+                width: 60%;
+            }
+        }
+        @media screen and (max-width: 730px) {
+            .member-image {
+                width: 60%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .member-info {
+                width: 100%;
+            }
+            .member-image {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "header">
+            <div class = "companyLogo">
+                <img class = "logo" src="Images/WeddingMelodiesLogo.jpeg" alt = "Company Logo"/>
+            </div>
+            <div class = "topnav" id = "myTopnav">
+                <div class = "topnavBox">
+                    <a class = "home" href="index.html">Home</a>
+                    <a class = "team" href="Team.html">Team</a>
+                    <a class = "songs" href="Songs.html">Songs</a>
+                    <a class = "contactUs" href="ContactUs.html">Contact Us</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class = "mainContent">
+            <ul class="member-list">
+                <li>
+                    <div class="member">
+                        <img src="Images/MeganPage.jpeg" alt="Member 1" class="member-image">
+                        <div class="member-info">
+                        <h3 class="member-name">Megan Page</h3>
+                        <p class="member-bio">
+                            Megan Page is an exceptionally talented lead guitarist and a vital member of our 
+                            wedding music band. With over 10 years of experience in the music industry, 
+                            Megan brings a dynamic energy and a unique flair to our performances. With her 
+                            extraordinary skills, professional demeanor, and unwavering dedication to her craft, 
+                            Megan Page is an invaluable asset to our wedding music band. Her passion for music 
+                            and commitment to creating unforgettable moments for couples on their special day 
+                            make her a true standout in the industry.
+                        </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="member">
+                        <img src="Images/JimHarper.jpg" alt="Member 2" class="member-image">
+                        <div class="member-info">
+                        <h3 class="member-name">Jim Harper</h3>
+                        <p class="member-bio">
+                            Known for his exceptional drumming skills and impeccable timing, 
+                            Jim Harper has an innate ability to read the crowd and adapt his playing style to 
+                            create the perfect atmosphere for each moment. Whether it's a slow romantic ballad 
+                            or an upbeat dance number, his rhythmic beats set the foundation for the 
+                            entire band's sound, ensuring that every song is delivered with energy and precision.
+                        </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="member">
+                        <img src="Images/JohnDoe.jpeg" alt="Member 3" class="member-image">
+                        <div class="member-info">
+                        <h3 class="member-name">John Doe</h3>
+                        <p class="member-bio">
+                            John Doe is a gifted and passionate pianist who adds elegance and enchantment 
+                            to every wedding he performs at. With his delicate touch and expressive playing 
+                            style, John brings a touch of sophistication to wedding ceremonies, 
+                            cocktail hours, and receptions. His mastery of the piano allows him to 
+                            create beautiful melodies and harmonies that evoke emotions and set the 
+                            perfect ambiance for each moment of the special day.
+                        </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class = "footer">
+            <div class = copyrightText>
+                &#xa9 2023 Wedding Melodies Inc.
+            </div>
+            <div>
+                304 Newbury St &#9839 172, Boston, MA 02115
+            </div>
+            <div>
+                (617) 297-8854
+            </div>
+            <div>
+                contact@weddingmemories.com
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+</body>
